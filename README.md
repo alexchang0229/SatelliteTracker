@@ -7,6 +7,7 @@ Link to post on Reddit: https://www.reddit.com/r/3Dprinting/comments/hr43pz/i_ma
 * This code was written for use with the Arduino MKR 1000 WiFi board
 * You will need the following libraries: <br /> https://github.com/Hopperpop/Sgp4-Library <br /> https://github.com/arduino-libraries/RTCZero <br />
 https://www.airspayce.com/mikem/arduino/AccelStepper/
+* **Place all the .INO files from this repository into the same folder on your computer, name it "tracker_main".**
 * Go to tracker_main.ino and change the values under the section "to be modify by user" for your location and satellites of interest
 * TLEs of satellites are obtained from Celestrak, simply copy the URL for the satellite you want (without the 'celestrak.com'),<br />
 for example the international space station would be "/satcat/tle.php?CATNR=25544"
@@ -78,3 +79,5 @@ Next satellite is: NEOSSAT in: 663
 
 # Author: Alex Chang
 You can contact me at: yuc888@mail.usask.ca
+
+
