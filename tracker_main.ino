@@ -6,17 +6,16 @@
 #include <AccelStepper.h>
 
 // To be modified by user //
-#define SECRET_SSID "ChangVan2017"  // Your Network name.
-#define SECRET_PASS "ohcanada" // Your Network password.
+#define SECRET_SSID "replace"  // Your Network name.
+#define SECRET_PASS "replace" // Your Network password.
 #define DEBUG                 //Enable serial output.
 const int timeZone = -7;      //Your Time zone.
 char TLE[500];                //Variable to store satellite TLEs.
-char satnames[4][30] = {"RADARSAT-2","NEOSSAT","M3MSAT ","SCISAT"};// Names of satellites.
-char satURL[4][30] = {"/satcat/tle.php?CATNR=32382","/satcat/tle.php?CATNR=39089",
-     "/satcat/tle.php?CATNR=41605","/satcat/tle.php?CATNR=27858"}; // URL of Celestrak TLEs for satellites (In same order as names).
-char TLE1[4][70]; char TLE2[4][70];
+char satnames[1][30] = {"ISS"};// Names of satellites.
+char satURL[1][30] = {"/satcat/tle.php?CATNR=25544"}; // URL of Celestrak TLEs for satellites (In same order as names).
+char TLE1[1][70]; char TLE2[1][70];
 float myLat = 52.12; float myLong = -106.663; float myAlt = 482;   // Your latitude, longitude and altitude.
-int numSats = 4;    // Number of satellites to track.
+int numSats = 1;    // Number of satellites to track.
 
 // Azimuth stepper pins //
 #define AZmotorPin1  9       // IN1 on the ULN2003 driver
@@ -209,7 +208,7 @@ void loop() {
   
 }
 
-int nextSatPass(long _nextpassEpoch[4]){ // Replace with number of satellites
+int nextSatPass(long _nextpassEpoch[1]){ // Replace with number of satellites
   for(i = 0;i < numSats; ++i){
     if( _nextpassEpoch[0]-timeNow >= _nextpassEpoch[i]-timeNow){
       _nextpassEpoch[0] = _nextpassEpoch[i];
