@@ -8,11 +8,25 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.10",
+    "@react-navigation/native": "^5.9.4",
     "expo": "~41.0.0",
+    "expo-barcode-scanner": "~10.1.2",
+    "expo-permissions": "~12.0.1",
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-camera": "^3.43.5",
+    "react-native-elements": "^3.3.2",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-odoo-promise-based": "^0.6.8",
+    "react-native-paper": "^4.7.2",
+    "react-native-qrcode-scanner": "^1.5.4",
+    "react-native-reanimated": "~2.1.0",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-screens": "~3.0.0",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
