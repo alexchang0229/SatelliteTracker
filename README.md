@@ -1,3 +1,6 @@
+### 2023 Update
+I made this project a couple years ago and since then Celestrak has moved from http to https. Unfortunately I don't think the Arduino MKR 1000 supports https requests. I'm working on an updated version of this project using an ESP-32 which is much cheaper anyways. So as it is, the code in this repo will not work anymore sorry.
+
 # SatelliteTracker
 This repository contains the code for my satellite tracker:<br />
 <img src="https://hackster.imgix.net/uploads/attachments/1156979/_ijWqYco4SG.blob?auto=compress%2Cformat&w=900&h=675&fit=min" width="600"> <br />
